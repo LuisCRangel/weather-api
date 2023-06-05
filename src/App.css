@@ -1,0 +1,113 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.weather-Clouds,
+.weather-Rain,
+.weather-Clear,
+.weather-Drizzle {
+  background-size: cover;
+  background-position: center;
+}
+.weather-Clouds {
+  background-image: url("https://images.pexels.com/photos/6129522/pexels-photo-6129522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.weather-Rain {
+  background-image: url("https://dependetcetera.files.wordpress.com/2015/09/42bb0-gotas-lluvia-67011.gif?w=607&h=323&zoom=2");
+}
+.weather-Clear {
+  background-image: url("https://images.pexels.com/photos/14235233/pexels-photo-14235233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.weather-Drizzle {
+  background-image: url("https://img.freepik.com/fotos-premium/fondo-lluvia-paisaje-otono-parque-abstracto-estacional-nadie-clima-octubre-paisaje_548821-42508.jpg?w=2000");
+}
+
+.weather-Snow {
+  background-image: url("https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.weather__info,
+.card__weather {
+  width: 600px;
+  padding: 35px;
+  background-color:#131313d6;
+  border-radius: 1em;
+  box-shadow: 2px 2px 15px;
+}
+.card__weather img {
+  display: block;
+  margin: 0 auto; 
+}
+
+.card__weather-temp {
+  margin-bottom: -30px;
+  margin-top: 50px;
+  color: #c4c3c3;
+  font-size: 25px;
+}
+.card__weather-condition{
+  margin-top: -30px;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+
+.card__weather-button {
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 12px;
+  transition: all ease-in 100ms;
+  cursor: pointer;
+}
+
+.card__weather-button:hover{  
+  background-color: #5f5e5e;
+}
+.card__weather-button:active{
+  transform: translateY(-4px);
+}
+
+.card__weather-city {
+  color: #dad6d6;
+  font-size: 17px;
+}
+.card__weather-items {
+  display: flex; 
+  justify-content: space-around; 
+  gap: 20px;
+  font-size: 13px;
+  margin-left: 0;
+  color: #c4c3c3;
+}
+
+.bx{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;  
+}
+
+@media (max-width:650px){
+  .card__weather,
+  .weather__info{
+    width: 300px;
+  }
+  .card__weather-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 10px;
+    text-align: center;
+  }
+  .bx{
+    font-size: 20px;
+  }
+}
