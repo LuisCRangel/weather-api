@@ -20,7 +20,7 @@
   background-image: url("./clouds.jpg");
 }
 .weather-Rain {
-  background-image: url("./rain.jpg");
+  background-image: url("https://images.pexels.com/photos/2748716/pexels-photo-2748716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 .weather-Clear { 
   background-image: url("https://images6.alphacoders.com/568/568500.jpg");
@@ -33,7 +33,7 @@
   background-image: url("https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 .weather-Mist {
-  background-image: url("./mist.jpg");
+  background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 
 .weather__info,
