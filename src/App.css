@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
 }
 .weather-Clouds {
-  background-image: url("./clouds.jpg");
+  background-image: url("https://images.pexels.com/photos/3742711/pexels-photo-3742711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 .weather-Rain {
   background-image: url("https://images.pexels.com/photos/2748716/pexels-photo-2748716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
