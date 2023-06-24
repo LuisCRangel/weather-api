@@ -127,11 +127,28 @@
   .search{
     width: 300px;
   }
+  .card__weather{
+    height: 380px;
+  }
+  .card__weather-temp{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .card__weather-city{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .card__weather-condition{
+    font-size: 16px;    
+  }
   .card__weather-items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: 10px;
     text-align: center;
+  }
+  .weather__info{
+    padding: 25px;
   }
   .bx{
     font-size: 20px;
