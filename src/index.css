@@ -26,3 +26,10 @@ ul{
   margin-left: 40px;
   padding-left: 0;
 }
+input{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: none; 
+  text-align: center;  
+}

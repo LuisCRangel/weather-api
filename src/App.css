@@ -10,18 +10,20 @@
 .weather-Clouds,
 .weather-Rain,
 .weather-Clear,
-.weather-Drizzle {
+.weather-Drizzle,
+.weather-Mist {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .weather-Clouds {
-  background-image: url("https://images.pexels.com/photos/6129522/pexels-photo-6129522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("./clouds.jpg");
 }
 .weather-Rain {
-  background-image: url("https://dependetcetera.files.wordpress.com/2015/09/42bb0-gotas-lluvia-67011.gif?w=607&h=323&zoom=2");
+  background-image: url("./rain.jpg");
 }
-.weather-Clear {
-  background-image: url("https://images.pexels.com/photos/14235233/pexels-photo-14235233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+.weather-Clear { 
+  background-image: url("https://images6.alphacoders.com/568/568500.jpg");
 }
 .weather-Drizzle {
   background-image: url("https://img.freepik.com/fotos-premium/fondo-lluvia-paisaje-otono-parque-abstracto-estacional-nadie-clima-octubre-paisaje_548821-42508.jpg?w=2000");
@@ -29,6 +31,9 @@
 
 .weather-Snow {
   background-image: url("https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.weather-Mist {
+  background-image: url("./mist.jpg");
 }
 
 .weather__info,
@@ -52,7 +57,6 @@
 }
 .card__weather-condition{
   margin-top: -30px;
-  margin-bottom: 50px;
   text-transform: capitalize;
 }
 
@@ -78,7 +82,8 @@
 
 .card__weather-city {
   color: #dad6d6;
-  font-size: 17px;
+  font-size: 19 px;
+  margin-bottom: 50px;
 }
 .card__weather-items {
   display: flex; 
@@ -88,17 +93,38 @@
   margin-left: 0;
   color: #c4c3c3;
 }
-
+.search{
+  position: relative;
+  display: flex;
+  width: 600px;
+  background-color: #131313d6;
+  padding: 25px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 16px;
+}
+.search__img{
+  width: 40px;
+}
 .bx{
   width: 100%;
   text-align: center;
   font-size: 30px;
   margin-top: 5px;  
 }
+.search__icon{
+  position: absolute;
+  right:3%;
+  top: 35%;
+  font-size: 20px;
+  color: #4b84f6;
+}
 
 @media (max-width:650px){
   .card__weather,
-  .weather__info{
+  .weather__info,
+  .search{
     width: 300px;
   }
   .card__weather-items{
@@ -109,5 +135,8 @@
   }
   .bx{
     font-size: 20px;
+  }
+  .search__icon{
+    left: 20%;
   }
 }
