@@ -32,7 +32,9 @@
 .weather-Snow {
   background-image: url("https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
-.weather-Mist {
+.weather-Mist,
+.weather-Smoke,
+.weather-Fog{
   background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 

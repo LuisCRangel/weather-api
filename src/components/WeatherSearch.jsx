@@ -13,10 +13,9 @@ const Input = ({location, setLocation,searchLocation}) => {
         value={location}
         onChange={getlocation}
         onKeyPress={searchLocation}
-        placeholder="Enter Location"
+        placeholder="Enter Location 🔎"
         type="text"
-      />
-    <i className='bx bx-search-alt-2 bx-rotate-90 search__icon'></i>
+      />  
       <img className="search__img" src="https://freepngimg.com/thumb/weather/23525-5-weather-free-download.png" alt="" />
 
     </div>

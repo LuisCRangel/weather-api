@@ -1,4 +1,4 @@
-const WeatherInfo = ({weather, temp}) => {
+const WeatherInfo = ({weather}) => {
   return (    
        <div className='weather__info'>    
     <ul className="card__weather-items">
@@ -6,8 +6,8 @@ const WeatherInfo = ({weather, temp}) => {
       <li>Clouds: <span>{weather?.clouds.all}%</span><p><i className='bx bx-cloud'></i></p></li>
       <li>Pressure: <span>{weather?.main.pressure} hPa</span><p><i className='bx bx-trending-down'></i></p></li>
       <li>Humidity: <span>{weather?.main.humidity}%</span><p><i className='bx bx-droplet'></i></p></li>
-      <li>Temp Min: <span>{temp?.min} °C</span><p><i className='bx bxs-thermometer' ></i></p></li>
-      <li>Temp Max: <span>{temp?.max} °C</span><p><i className='bx bxs-thermometer' ></i></p></li>
+      <li>Temp Min: <span>{(weather?.main.temp_min - 273.15).toFixed(1)} °C</span><p><i className='bx bxs-thermometer' ></i></p></li>
+      <li>Temp Max: <span>{(weather?.main.temp_max - 273.15).toFixed(1)} °C</span><p><i className='bx bxs-thermometer' ></i></p></li>
     </ul>    
       </div> 
   )

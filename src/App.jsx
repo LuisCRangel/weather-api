@@ -10,7 +10,6 @@ import WeatherSearch from "./components/WeatherSearch";
 function App() {
   const [coords, setCoords] = useState();
   const [weather, setWeather] = useState()
-  const [temp, setTemp] = useState()
   const [isCelsius, setIsCelsius] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
   const [location, setLocation] = useState('')
@@ -34,14 +33,7 @@ function App() {
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coords?.lat}&lon=${coords?.lon}&appid=${getApiKey()}`      
       axios.get(url)
       .then(res => {
-        setWeather(res.data)
-        const objTemp ={
-          celcius: +(res.data.main.temp - 273.15).toFixed(0),
-          farenheit: +( (res.data.main.temp - 273.15) * 9/5 +32).toFixed(0),
-          min: +(res.data.main.temp_min -273.15).toFixed(0),
-          max: +(res.data.main.temp_max -273.15).toFixed(0),
-        }
-        setTemp(objTemp)
+        setWeather(res.data)       
       })
       .catch(err => console.log(err))
       .finally(setIsLoading(false))
@@ -49,9 +41,8 @@ function App() {
   },[coords])
 
 
-  const handelChangeTemp = () => {
-    setIsCelsius(!isCelsius)
-  }
+  const handelChangeTemp = () => setIsCelsius(!isCelsius)
+  
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -81,12 +72,10 @@ function App() {
         <WeatherCard 
         weather={weather}
         handelChangeTemp={handelChangeTemp}    
-        isCelsius={isCelsius}
-        temp={temp}
+        isCelsius={isCelsius}  
         />
          <WeatherInfo 
-      weather={weather}
-      temp={temp}
+      weather={weather} 
       />
         </>
       }
