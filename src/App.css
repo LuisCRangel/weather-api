@@ -28,7 +28,9 @@
 .weather-Drizzle {
   background-image: url("https://img.freepik.com/fotos-premium/fondo-lluvia-paisaje-otono-parque-abstracto-estacional-nadie-clima-octubre-paisaje_548821-42508.jpg?w=2000");
 }
-
+.weather-Thunderstorm{
+  background-image: url('https://images.pexels.com/photos/15131462/pexels-photo-15131462/free-photo-of-naturaleza-cielo-nubes-tiempo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
 .weather-Snow {
   background-image: url("https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
@@ -95,19 +97,13 @@
   margin-left: 0;
   color: #c4c3c3;
 }
-.search{
-  position: relative;
+.search{  
   display: flex;
-  width: 600px;
-  background-color: #131313d6;
-  padding: 25px;
-  justify-content: space-around;
+  padding: 25px;  
   align-items: center;
+  justify-content: center;
   font-size: 1rem;
   border-radius: 16px;
-}
-.search__img{
-  width: 40px;
 }
 .bx{
   width: 100%;
@@ -115,22 +111,11 @@
   font-size: 30px;
   margin-top: 5px;  
 }
-.search__icon{
-  position: absolute;
-  right:3%;
-  top: 35%;
-  font-size: 20px;
-  color: #4b84f6;
-}
 
 @media (max-width:650px){
   .card__weather,
-  .weather__info,
-  .search{
+  .weather__info{
     width: 300px;
-  }
-  .card__weather{
-    height: 380px;
   }
   .card__weather-temp{
     margin-top: 20px;

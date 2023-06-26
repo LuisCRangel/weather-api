@@ -5,7 +5,7 @@ import getApiKey from './utils/getApiKey'
 import WeatherCard from "./components/WeatherCard";
 import ScreenLoader from "./components/ScreenLoader";
 import WeatherInfo from "./components/WeatherInfo";
-import WeatherSearch from "./components/WeatherSearch";
+// import WeatherSearch from "./components/WeatherSearch";
 
 function App() {
   const [coords, setCoords] = useState();
@@ -63,16 +63,14 @@ function App() {
         isLoading
         ? <ScreenLoader />
         : 
-        <>
-        <WeatherSearch 
-       location={location}
-        setLocation={setLocation}
-        searchLocation={searchLocation}
-        />
+        <>       
         <WeatherCard 
         weather={weather}
         handelChangeTemp={handelChangeTemp}    
         isCelsius={isCelsius}  
+        location={location}
+        setLocation={setLocation}
+        searchLocation={searchLocation}
         />
          <WeatherInfo 
       weather={weather} 

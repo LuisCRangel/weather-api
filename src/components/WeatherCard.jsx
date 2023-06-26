@@ -1,10 +1,17 @@
-const WeatherCard = ({ weather, isCelsius, handelChangeTemp }) => {
+import WeatherSearch from './WeatherSearch'
+
+const WeatherCard = ({ weather, isCelsius, handelChangeTemp, location, setLocation,searchLocation}) => {
   return (
     <article className="card__weather">
       <header>
         <h1>Weather App</h1>
       </header>
       <section>
+      <WeatherSearch 
+       location={location}
+        setLocation={setLocation}
+        searchLocation={searchLocation}
+        />
         <div>
           <h2 className="card__weather-temp">
             {isCelsius ? (weather?.main.temp - 273.15).toFixed(1) + " °C" : ((weather?.main.temp - 273.15) * 9/5 +32).toFixed(1) + " °F" }

@@ -15,9 +15,7 @@ const Input = ({location, setLocation,searchLocation}) => {
         onKeyPress={searchLocation}
         placeholder="Enter Location 🔎"
         type="text"
-      />  
-      <img className="search__img" src="https://freepngimg.com/thumb/weather/23525-5-weather-free-download.png" alt="" />
-
+      />            
     </div>
   );
 };
